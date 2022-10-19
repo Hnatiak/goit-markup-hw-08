@@ -1,0 +1,29 @@
+:root {
+    --primary-color: #212121;
+    --link-color: #000;
+    --description-color: #757575;
+    --a-color: #2196F3;
+    --color: #fff;
+    --icon-color: #afb1b8;
+    --background-color: #f5f4fa;
+    --main-background-color: #2f303a;
+
+    --portfolio-card-set-gap: 30px;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+$fontFamily: 'Roboto', sans-serif;
+$fontLogo: 'Raleway', sans-serif;
+
+// SASS Variables for Adaptive Breakpoints
+// For mobile
+$preMobile: 479px;
+$mobile: 480px;
+
+// For tablet
+$preTablet: 767px;
+$tablet: 768px;
+
+// For desktop
+$preDesktop: 1199px;
+$desktop: 1200px;

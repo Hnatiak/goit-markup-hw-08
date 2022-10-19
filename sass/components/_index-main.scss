@@ -1,0 +1,362 @@
+.projects {
+    padding: 94px 0;
+  }
+
+  .menu-button {
+    display: flex;
+    border-radius: 4px;
+    text-decoration: none;
+    justify-content: center;
+  }
+
+  .header-list-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-column-gap: 8px;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    row-gap: 15px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 1600px) { 
+      margin-bottom: 50px;
+    }
+  }
+
+// __________________________________________________________________
+// Button Замовити послугу
+  .header-button:not(:first-child) {
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+  }
+
+  .pointer {
+    background-color: var(--background-color);
+    padding-left: 22px;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: none;
+    border-radius: 4px;
+    color: var(--primary-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .pointer {
+    &:hover, .social-item { 
+        &:hover {
+    color: var(--color);
+    background-color: var(--a-color); }
+    }
+}
+
+// __________________________________________________________________
+// 4 картини Увага до деталей і тд
+
+  .tables {
+    @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: 769px)  and (max-width: 1199px) {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+@media screen and (min-width: 1200px)  and (max-width: 1600px) {
+  display: flex;
+  gap: 30px;
+}
+  }
+
+.tables-three {
+  gap: 30px;
+
+  @media screen and (max-width: 569px) {
+  flex-wrap: wrap;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 569px) and (max-width: 1199px) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px)  and (max-width: 1600px) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+}
+}
+
+  .big-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    background: var(--background-color);
+    border-radius: 4px;
+    height: 120px;
+    align-items: center;
+}
+
+  .icon {
+    position: absolute;
+    fill: currentColor;
+  }
+
+// Назва до Увага до деталей і т.д
+  .title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+  }
+  }
+// Опис до Увага до деталей і т.д
+  .description-first {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--description-color);
+  }
+
+// __________________________________________________________________
+
+// Чим ми займаємось - 3 картини
+  .title-first {
+    font-weight: 700px;
+    font-size: 28px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
+
+    @media screen and (min-width: 1600px) {
+      font-size: 36px;
+    }
+  }
+
+  .picture-first {
+    position: relative;
+  }
+// Опис, бекграунд, текст який є в картині до Чим ми займаємось
+  .card-text-photo {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+  }
+
+  .card-text-photo .text-photo-first {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+
+// ____________________________________________________________________________
+//   Команда
+
+.team {
+    background: #F5F4FA;
+  }
+
+  .photo {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background-color: var(--color);
+
+    @media screen and (min-width: 768px) {
+    width: calc((100% - 30px)/2);
+}
+  }
+
+  .name-table {
+    padding: 30px 30px 30px 30px;
+    color: var(--icon-color);
+  }
+
+  .name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+  }
+
+  .description-person {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--description-color);
+  }
+
+  .description-person-social {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    gap: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .pointer:hover, .social-item {
+  &:hover {
+    color: var(--color);
+    background-color: var(--a-color); 
+  }
+}
+
+  .icon-team {
+    color: var(--icon-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+  }
+
+  .icon-team {
+    &:hover .icon {
+    color: var(--color);
+    }
+  }
+
+//   Клієнти - 5 частин
+
+.client {
+    fill: currentColor;
+    text-decoration: none;
+  }
+
+.clients .title {
+    margin-bottom: 50px;
+  }
+
+  .clients .link-down {
+    @media screen and (min-width: 400px) {
+      width: 170px;
+    }
+
+    justify-content: center;
+    height: 92px;
+    align-items: center;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    color: var(--icon-color);
+  }
+
+  .clients .link-down {
+    display: flex;
+    justify-content: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .client__list {
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      gap: 30px;
+  }
+
+  .link-down {
+    &:hover {
+    color: var(--a-color);
+    border-color: var(--a-color);
+    }
+  }
+.link-down {
+  @media screen and (max-width: 480px) {
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 92px;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+}
+
+}
+
+  .block {
+    // display: flex;
+    // flex-wrap: wrap;
+    // gap: 30px;
+    // justify-content: space-between;
+
+    // @media screen and (max-width: 420px) {
+    //   justify-content: center;
+    //   display: flex;
+    //   flex-wrap: wrap;
+    //   gap: 30px;
+    // }
+
+    @media screen and (min-width: 1200px) and (min-width: 1600px) {
+      display: flex;
+      gap: 30px;
+    }
+  }

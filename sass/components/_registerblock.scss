@@ -1,0 +1,241 @@
+ .modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 0 12px 0;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--link-color);
+  }
+
+// Request
+  .request {
+    padding-left: 0px;
+    display: block;
+    gap: 12px;
+  }
+
+  .request-field {
+    user-select: none;
+    margin-bottom: 10px;
+  }
+
+  .request-field svg {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+  }
+
+  .request-field input {
+    border: none;
+    width: 100%;
+    height: 40px; /* або 30px */
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    padding-left: 42px;
+    border-radius: 4px;
+  }
+  
+  .request-field input:focus {
+    border: 1px solid var(--a-color);
+  }
+  
+  .request-field input:focus + svg {
+    fill: var(--a-color);
+  }
+
+  .name-icon {
+    font-size: 12px;
+    cursor: pointer;
+    color: var(--description-color);
+  }
+
+  .input-window {
+    margin-top: 4px;
+    position: relative;
+  }
+
+  .input {
+    font-size: 18px;
+  }
+
+  textarea {
+    border: 1px solid var(--description-color);
+    padding: 12px 16px 12px 16px;
+    border-radius: 4px;
+    outline: 0;
+    width: 100%;
+    height: 120px;
+    resize: none; /* Забороняємо змінювати розмір */
+    text-transform: none;
+    padding: none;
+  }
+// Відділ для коментаря
+
+.text {
+  max-width: 696px;
+  margin-bottom: 30px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color);
+
+  @media screen and (max-width: 767px) { 
+    font-size: 26px;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1600px) { 
+  font-size: 44px;
+}
+
+}
+
+  .textarea {
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .textarea:focus {
+    border: 1px solid var(--a-color);
+  }
+
+  .comment {
+    padding: 12px;
+  }
+// Відділ для погодження з умовами
+
+// ________КЛАС НЕ ПІДТРИМУЄТЬСЯ__________
+.checkbox {
+  translate: 0 15%;
+  width: 15px;
+  height: 15px;
+  color: var(--description-color);
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+// ________________________________________
+
+  .checkbox-footer {
+    padding-left: 14px;
+    user-select: none;
+    display: flex;
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0px 30px 0px;
+    color: var(--description-color);
+  }
+  
+  .checkbox-footer input:checked + label .checkbox-first {
+    cursor: pointer;
+    background: var(--a-color);
+    border: 2px solid var(--a-color);
+  }
+
+  .cursor {
+    cursor: pointer;
+  }
+
+  .checkbox-first {
+    border: 2px solid var(--primary-color);
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    display: flex;
+    margin-right: 4px;
+    position: absolute;
+    top: 75%;
+}
+
+
+
+  .modall__license {
+    font-weight: 400;
+    line-height: 14px;
+    padding-left: 24px;
+    font-size: 12px;
+    color: var(--description-color);
+    text-align: start;
+
+    @media screen and (min-width: 477px) { 
+      font-weight: 400;
+      line-height: 14px;
+      font-size: 14px;
+    }
+}
+
+  .political {
+    color: var(--a-color);
+    text-decoration: underline;
+  }
+
+  .order {
+    margin-bottom: 180px;
+    background: var(--a-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 32px;
+    display: block;
+
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0 auto;
+    letter-spacing: 0.06em;
+    color: var(--color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Захований ордер для кнопки Замовити послугу*/
+.order {
+    &:hover {
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--color);
+    }
+}
+
+  // ________________________________________________
+
+  .order-two {
+    margin-bottom: 180px;
+    background: var(--a-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 52px;
+    display: block;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0 auto;
+    letter-spacing: 0.06em;
+    color: var(--color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .order-two {
+  &:hover {
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--color);
+  }
+}

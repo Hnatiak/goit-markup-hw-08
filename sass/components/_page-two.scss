@@ -1,0 +1,65 @@
+.list {
+  display: block;
+  background-color: var(--main-background-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--color); 
+
+  @media screen and (max-width: 784px) {
+    padding: 118px 0px;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/header-mob-1x.jpg");
+  
+  }
+
+  // @media screen and (min-width: 786px) and (max-width: 1600px) {
+  //   padding: 80px 400px;
+
+  //   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/header-tablet-2x.jpg");
+  // }
+
+  @media screen and (min-width: 785px) and (max-width: 1600px)  {
+    padding: 200px 0;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/slider-image-one.jpg");
+}
+
+}
+
+  .fast-contacts .title-footer {
+    color: var(--color);
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.shape-codepen-third {
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.modifier {
+    padding-bottom: 0;
+  }
+
+  .policy {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  .icon-second {
+    fill: currentColor;
+}
+
+.item {
+    cursor: pointer;
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

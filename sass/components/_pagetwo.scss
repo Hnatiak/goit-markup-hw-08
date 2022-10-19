@@ -1,0 +1,253 @@
+/* PORTFOLIO (PAGE 2) */
+
+
+.hidden {
+    &:hover {
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        -ms-flex-preferred-size: calc((100% - 30px)/2);
+        flex-basis: calc((100% - 30px)/2);
+    }
+}
+.projects {
+    padding: 94px 0;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+    
+    @media screen and (max-width: 767px) {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+}
+
+.header-button:not(:first-child) {
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+}
+
+/* PHOTOS */
+
+.name-table {
+    // padding: 30px 30px 30px 30px;
+    // color: var(--icon-color);
+
+    padding: 30px 0 24px 0;
+    background-color: var(--prime-bgc);
+}
+
+/* Hidden text to photos */
+
+.overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.close-window-first {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-window-first { 
+    &:hover {
+    color: var(--a-color);
+    }
+}
+
+.overlay .text-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    line-height: 1.55;
+    padding: 63px 24px;
+    color: var(--color);
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay > p {
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+
+}
+
+.container .text-photo-first {
+    display: flex;
+    justify-content: center;
+}
+
+.container .text-photo-first {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.container .text-photo-first {
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    font-weight: 700;
+    color: var(--color);
+    background-color: rgba(47, 48, 58, 0.1);
+}
+
+.picture-first {
+    position: relative;
+}
+
+.card-text-photo {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+}
+
+.card-text-photo .text-photo-first {
+    display: flex;
+    justify-content: center;
+}
+.card-text-photo .text-photo-first {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+/* __________________________________________________________________________________________________ */
+
+.description-person-social {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    gap: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-pearson {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border: var(--color);
+    border: 1px solid #EEEEEE;
+}
+
+.section > .tables {
+    display: flex;
+    flex-basis: calc(100% / 4);
+    padding-bottom: 47px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.tables-two {
+    display: flex;
+    flex-basis: calc(100% / 3 - 30px);
+
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+}
+
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.description {
+    @media screen and (max-width: 1199px) {
+        font-size: 16px;
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    font-size: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin: 0;
+    color: var(--primary-color);
+    }
+}
+
+.job {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height:  1.875;
+    letter-spacing: 0.03em;
+    color: var(--description-color);
+}
+
+/* Загальні команди які застосовуються до всіх */
+
+a {
+    list-style: center;
+    text-decoration: none; /*Прибираємо підкреслення у посилань*/
+}
+
+li {
+    list-style: none
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(360deg);
+        border-radius: 15%;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        border-radius: 0;
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
+}

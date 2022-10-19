@@ -1,0 +1,136 @@
+// .active-menu
+// &:hover {
+//     @media screen and (max-width: 768px)
+//     {
+//     color: var(--a-color);
+//     }
+// }
+
+.contact-social__item {
+    padding: 0 10px;
+
+    @media screen and (max-width: 459px) {
+    margin-bottom: 10px;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    }
+    
+}
+
+.contact {
+    @media screen and (max-width: 767px) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        font-size: 34px;
+        line-height: 1.18;
+    }
+    }
+
+.contact__item:not(:first-child) {
+@media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+}
+}
+
+.contact__mail {
+@media screen and (max-width: 767px) {
+    display: block;
+    margin-bottom: 64px;
+    font-size: 24px;
+    line-height: 1.67;
+}
+}
+
+.contact__mail {
+    color: var(--description-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.contact__mail {
+@media screen and (max-width: 767px) {
+    display: block;
+    margin-bottom: 64px;
+    font-size: 24px;
+    line-height: 1.67;
+}
+}
+
+.contact__item:not(:first-child) {
+@media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+}
+}
+
+.contact__tel {
+    color: currentColor;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.contact-social__item:not(:first-child) {
+@media screen and (max-width: 765px) {
+    border-left: 1px solid rgba(33,33,33,.2);
+}
+}
+
+.contact__tel {
+@media screen and (max-width: 767px) {
+    color: var(--a-color);
+}
+
+@media screen and (max-width: 376px) {
+    font-size: 26px;
+}
+}
+
+.active:focus, .active:hover {
+    color: var(--a-color);
+}
+
+.contact {
+    font-weight: 500;
+    letter-spacing: .02em;
+    color: var(--a-color);
+}
+
+.contact-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 479px) {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+}
+
+.contact-social__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: .02em;
+    color: var(--a-color);
+}
