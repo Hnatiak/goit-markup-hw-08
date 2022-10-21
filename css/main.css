@@ -487,6 +487,7 @@
 input[type=email i] {
   padding: 15px 16px;
   font-size: 1em;
+  padding-left: 42px;
 }
 
 ::placeholder {
@@ -574,6 +575,7 @@ input[type=email i] {
 
 .modal-first input {
   color: var(--color);
+  padding: 16px;
 }
 
 .request-second {
@@ -2071,6 +2073,7 @@ textarea {
 input[type=email i] {
   padding: 15px 16px;
   font-size: 1em;
+  padding-left: 42px;
 }
 
 ::placeholder {
@@ -2158,6 +2161,7 @@ input[type=email i] {
 
 .modal-first input {
   color: var(--color);
+  padding: 16px;
 }
 
 .request-second {

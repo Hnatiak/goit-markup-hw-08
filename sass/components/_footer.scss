@@ -98,6 +98,7 @@
   input[type="email" i] {
     padding: 15px 16px;
     font-size: 1em;
+    padding-left: 42px;
 }
 
 ::placeholder {
@@ -183,6 +184,7 @@
 
   .modal-first input {
     color: var(--color);
+    padding: 16px;
   }
 
   .request-second {
